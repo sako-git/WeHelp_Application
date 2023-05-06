@@ -1,0 +1,78 @@
+.page{
+    background-image: url('Vincent-van-Gogh-Starry-Night_m..webp');
+    background-repeat: repeat;
+    background-attachment: local,scroll;
+    background-size: 100% ;
+}
+.title{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.5em;;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,標楷體;
+    text-align: center;
+}
+/*完美置中*/ 
+.content_block{
+    display: flex;
+    justify-content: center;
+    align-items: center;   /*垂直對齊*/ 
+}
+.content_title{
+    flex:none;
+    width: 85%;
+    background-color: black;
+    color:white;
+    margin-top:30px;
+    font-style: normal;
+    font-size: 1.87em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,標楷體;
+    text-align: center;      
+}
+.line {
+    border: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right,#333, #ccc,#333);
+}
+.content{
+    background-color: black;
+    color:white;
+    margin-bottom:30px;
+    font-style: normal;
+    font-size: 0.875em;
+    font-family:'sans-serif', sans-serif,標楷體;
+    text-align: left;
+}
+/*平板設定*/ 
+@media(max-width:1250px){
+    
+    .title{
+        font-size: 1.8em;
+    }
+    .content_title{
+        font-size: 1.3em;
+        width: 90%;
+    }
+    .content{
+        font-size: 0.8em;
+    }
+}
+/*手機設定*/ 
+@media(max-width:500px){
+    
+    .title{
+        font-size: 1.6em;
+    }
+    .content_title{
+        font-size: 1.1em;
+        width: 95%;
+    }
+   
+    .content{
+        font-size: 0.6em;
+    }
+}
